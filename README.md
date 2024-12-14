@@ -22,4 +22,7 @@ a set of blogposts as a **Advent of Microfost Azure AI** _2024_ presented to rea
 10. [Dec 10 2024 - Microsoft Azure AI – Language and Translation in Azure AI Foundry](https://github.com/tomaztk/.md) ([blogpost](https://tomaztsql.wordpress.com/2024/12/10/advent-of-2024-day-10-microsoft-azure-ai-language-and-translation-in-azure-ai-foundry/))
 11. [Dec 11 2024 - Microsoft Azure AI – Language and Translation Python SDK](https://github.com/tomaztk/.md) ([blogpost](https://tomaztsql.wordpress.com/2024/12/11/advent-of-2024-day-11-microsoft-azure-ai-language-and-translation-in-azure-ai-foundry/))
 12. [Dec 12 2024 - Microsoft Azure AI – Vision and Document AI Service](https://github.com/tomaztk/.md) ([blogpost](https://tomaztsql.wordpress.com/2024/12/12/advent-of-2024-day-12-microsoft-azure-ai-vision-and-document-ai-service/))
-13. [Dec 13 2024 - Microsoft Azure AI – Vision and Document Python SDK](https://github.com/tomaztk/.md) ([blogpost](https://tomaztsql.wordpress.com/2024/12/13/advent-of-2024-day-13-microsoft-azure-ai-vision-and-document-python-sdk/))
+13. [Dec 13 2024 - Microsoft Azure AI – Vision and Document Python SDK](https://github.com/tomaztk/.md) ([blogpost](https://tomaztsql.wordpress.com/2024/12/13/advent-of-2024-day-13-microsoft-azure-ai-vision-and-document-python-sdk/)
+14. [Dec 14 2024 - Microsoft Azure AI – Content safety AI service](https://github.com/tomaztk/.md) ([blogpost](https://tomaztsql.wordpress.com/2024/12/14/advent-of-2024-day-14-microsoft-azure-ai-content-safety-ai-service/)
+
+
