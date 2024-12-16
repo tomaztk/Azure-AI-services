@@ -25,5 +25,6 @@ a set of blogposts as a **Advent of Microfost Azure AI** _2024_ presented to rea
 13. [Dec 13 2024 - Microsoft Azure AI – Vision and Document Python SDK](https://github.com/tomaztk/.md) ([blogpost](https://tomaztsql.wordpress.com/2024/12/13/advent-of-2024-day-13-microsoft-azure-ai-vision-and-document-python-sdk/))
 14. [Dec 14 2024 - Microsoft Azure AI – Content safety AI service](https://github.com/tomaztk/.md) ([blogpost](https://tomaztsql.wordpress.com/2024/12/14/advent-of-2024-day-14-microsoft-azure-ai-content-safety-ai-service/))
 15. [Dec 15 2024 - Microsoft Azure AI – Content safety Python SDK](https://github.com/tomaztk/.md) ([blogpost](https://tomaztsql.wordpress.com/2024/12/15/advent-of-2024-day-15-microsoft-azure-ai-content-safety-python-sdk/))
+16. [Dec 16 2024 - Microsoft Azure AI – Fine-tuning a model](https://github.com/tomaztk/.md) ([blogpost](https://tomaztsql.wordpress.com/2024/12/16/advent-of-2024-day-16-microsoft-azure-ai-fine-tuning-a-model/))
 
 
