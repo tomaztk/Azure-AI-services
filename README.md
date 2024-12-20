@@ -29,4 +29,5 @@ a set of blogposts as a **Advent of Microfost Azure AI** _2024_ presented to rea
 17. [Dec 17 2024 - Microsoft Azure AI – Azure OpenAI service](https://github.com/tomaztk/.md) ([blogpost](https://tomaztsql.wordpress.com/2024/12/17/advent-of-2024-day-17-microsoft-azure-ai-azure-openai-service/))
 18. [Dec 18 2024 - Microsoft Azure AI – Azure AI Hub and Azure AI Project](https://github.com/tomaztk/.md) ([blogpost](https://tomaztsql.wordpress.com/2024/12/18/advent-of-2024-day-18-microsoft-azure-ai-azure-ai-hub-and-azure-ai-project/))
 19. [Dec 19 2024 - Azure AI Foundry management center](https://github.com/tomaztk/.md) ([blogpost](https://tomaztsql.wordpress.com/2024/12/19/advent-of-2024-day-19-microsoft-azure-ai-azure-ai-foundry-management-center/))
+20. [Dec 20 2024 - Models and endpoints in Azure AI Foundry](https://github.com/tomaztk/.md) ([blogpost](https://tomaztsql.wordpress.com/2024/12/20/advent-of-2024-day-20-microsoft-azure-ai-models-and-endpoints-in-azure-ai-foundry/))
 
