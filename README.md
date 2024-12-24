@@ -33,4 +33,5 @@ a set of blogposts as a **Advent of Microfost Azure AI** _2024_ presented to rea
 21. [Dec 21 2024 - Microsoft Azure AI – Prompt flow in Azure AI Foundry](https://github.com/tomaztk/.md) ([blogpost](https://tomaztsql.wordpress.com/2024/12/21/advent-of-2024-day-21-microsoft-azure-ai-prompt-flow-in-azure-ai-foundry/))
 22. [Dec 22 2024 - Microsoft Azure AI – Prompt flow using VS Code and Python](https://github.com/tomaztk/.md) ([blogpost](https://tomaztsql.wordpress.com/2024/12/22/advent-of-2024-day-22-microsoft-azure-ai-prompt-flow-using-vs-code-and-python/))
 23. [Dec 23 2024 - Microsoft Azure AI – Tracing in Azure AI Foundry](https://github.com/tomaztk/.md) ([blogpost](https://tomaztsql.wordpress.com/2024/12/23/advent-of-2024-day-23-microsoft-azure-ai-tracing-in-azure-ai-foundry/))
+24. [Dec 24 2024 - Microsoft Azure AI – Evaluation in Azure AI Foundry](https://tomaztsql.wordpress.com/2024/12/24/advent-of-2024-day-24-microsoft-azure-ai-evaluation-in-azure-ai-foundry/))
 
