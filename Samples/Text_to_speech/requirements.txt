@@ -1,0 +1,16 @@
+# ── Azure AI Foundry / Azure AI Projects (agents) ────────────────────────────
+azure-ai-projects>=1.0.0
+
+# ── Azure AI Speech — fast transcription ─────────────────────────────────────
+azure-ai-transcription>=1.0.0b1
+
+# ── Azure identity (DefaultAzureCredential / AzureKeyCredential) ──────────────
+azure-identity>=1.19.0
+azure-core>=1.32.0
+
+# ── MP3 → WAV conversion (optional — only needed for MP3 input files) ─────────
+# Requires ffmpeg to be installed on the system (https://ffmpeg.org)
+pydub>=0.25.1
+
+# ── Utilities ─────────────────────────────────────────────────────────────────
+python-dotenv>=1.0.0
