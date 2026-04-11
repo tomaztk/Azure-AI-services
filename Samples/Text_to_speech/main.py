@@ -72,7 +72,7 @@ def main():
         language=args.language,
         max_speakers=args.max_speakers,
     )
-    print(f"      ✓ Transcription complete ({len(transcript['full_text'])} chars)\n")
+    print(f"       Transcription complete ({len(transcript['full_text'])} chars)\n")
 
     # ── Step 2: Agentic Analysis ───────────────────────────────────
     print("[2/3] Running agentic analysis (Azure AI Foundry)...")
@@ -80,7 +80,7 @@ def main():
         audio_file=str(audio_path),
         transcript=transcript,
     )
-    print("      ✓ Analysis complete\n")
+    print("       Analysis complete\n")
 
     # ── Step 3: Export ─────────────────────────────────────────────
     print("[3/3] Exporting results to CSV...")
@@ -90,7 +90,7 @@ def main():
         analysis=analysis,
         output_path=args.output,
     )
-    print(f"      ✓ Results saved → {output_path}\n")
+    print(f"      Results saved → {output_path}\n")
 
     # ── Summary printout ───────────────────────────────────────────
     print("─" * 60)
