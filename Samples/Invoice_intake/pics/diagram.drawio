@@ -1,0 +1,94 @@
+<mxfile host="65bd71144e">
+    <diagram id="n_p941iEimQiFGb0WNrV" name="Page-1">
+        <mxGraphModel dx="979" dy="948" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="joIDpppj7RB4MIwdnNrO-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Invoice Intake&lt;br&gt;(mobile web app)" vertex="1">
+                    <mxGeometry height="60" width="180" x="130" y="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="joIDpppj7RB4MIwdnNrO-3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Extract&lt;br&gt;(content understanding)" vertex="1">
+                    <mxGeometry height="60" width="180" x="130" y="210" as="geometry"/>
+                </mxCell>
+                <mxCell id="joIDpppj7RB4MIwdnNrO-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Validate and decide&lt;br&gt;(Foundry workflow, 3+ agents)" vertex="1">
+                    <mxGeometry height="60" width="180" x="130" y="320" as="geometry"/>
+                </mxCell>
+                <mxCell id="joIDpppj7RB4MIwdnNrO-5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Human approval&amp;nbsp;&lt;br&gt;(any channel or presenter OK)" vertex="1">
+                    <mxGeometry height="60" width="180" x="130" y="430" as="geometry"/>
+                </mxCell>
+                <mxCell id="joIDpppj7RB4MIwdnNrO-8" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Azure SQL Database&lt;br&gt;(approved Invoices, POs, sales)" vertex="1">
+                    <mxGeometry height="60" width="180" x="130" y="540" as="geometry"/>
+                </mxCell>
+                <mxCell id="joIDpppj7RB4MIwdnNrO-9" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="OneLake&lt;br&gt;(Fabric mirroring, nrea real time)" vertex="1">
+                    <mxGeometry height="60" width="180" x="440" y="540" as="geometry"/>
+                </mxCell>
+                <mxCell id="joIDpppj7RB4MIwdnNrO-10" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Semantic model&lt;br&gt;(Spend, trend, deviations...)" vertex="1">
+                    <mxGeometry height="60" width="180" x="430" y="430" as="geometry"/>
+                </mxCell>
+                <mxCell id="joIDpppj7RB4MIwdnNrO-11" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Fabric IQ ontology&amp;nbsp;&lt;br&gt;(business terms, relations)" vertex="1">
+                    <mxGeometry height="60" width="180" x="440" y="320" as="geometry"/>
+                </mxCell>
+                <mxCell id="joIDpppj7RB4MIwdnNrO-12" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Foundry agent&lt;br&gt;(Fabric IQ + Code interpreter)" vertex="1">
+                    <mxGeometry height="60" width="180" x="440" y="210" as="geometry"/>
+                </mxCell>
+                <mxCell id="joIDpppj7RB4MIwdnNrO-13" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="People ask&lt;br&gt;(mobile web app)" vertex="1">
+                    <mxGeometry height="60" width="180" x="440" y="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="joIDpppj7RB4MIwdnNrO-14" edge="1" parent="1" style="endArrow=classic;html=1;" value="">
+                    <mxGeometry height="50" relative="1" width="50" as="geometry">
+                        <mxPoint x="219.5" y="490" as="sourcePoint"/>
+                        <mxPoint x="219.5" y="540" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="joIDpppj7RB4MIwdnNrO-15" edge="1" parent="1" style="endArrow=classic;html=1;" value="">
+                    <mxGeometry height="50" relative="1" width="50" as="geometry">
+                        <mxPoint x="219.5" y="380" as="sourcePoint"/>
+                        <mxPoint x="219.5" y="430" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="joIDpppj7RB4MIwdnNrO-16" edge="1" parent="1" style="endArrow=classic;html=1;" value="">
+                    <mxGeometry height="50" relative="1" width="50" as="geometry">
+                        <mxPoint x="219.5" y="270" as="sourcePoint"/>
+                        <mxPoint x="219.5" y="320" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="joIDpppj7RB4MIwdnNrO-17" edge="1" parent="1" style="endArrow=classic;html=1;" value="">
+                    <mxGeometry height="50" relative="1" width="50" as="geometry">
+                        <mxPoint x="219.5" y="160" as="sourcePoint"/>
+                        <mxPoint x="219.5" y="210" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="joIDpppj7RB4MIwdnNrO-18" edge="1" parent="1" style="endArrow=classic;html=1;" value="">
+                    <mxGeometry height="50" relative="1" width="50" as="geometry">
+                        <mxPoint x="520" y="540" as="sourcePoint"/>
+                        <mxPoint x="520" y="490" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="joIDpppj7RB4MIwdnNrO-20" edge="1" parent="1" style="endArrow=classic;html=1;" value="">
+                    <mxGeometry height="50" relative="1" width="50" as="geometry">
+                        <mxPoint x="519.5" y="430" as="sourcePoint"/>
+                        <mxPoint x="519.5" y="380" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="joIDpppj7RB4MIwdnNrO-21" edge="1" parent="1" style="endArrow=classic;html=1;" value="">
+                    <mxGeometry height="50" relative="1" width="50" as="geometry">
+                        <mxPoint x="519.5" y="320" as="sourcePoint"/>
+                        <mxPoint x="519.5" y="270" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="joIDpppj7RB4MIwdnNrO-22" edge="1" parent="1" style="endArrow=classic;html=1;" value="">
+                    <mxGeometry height="50" relative="1" width="50" as="geometry">
+                        <mxPoint x="519.5" y="210" as="sourcePoint"/>
+                        <mxPoint x="519.5" y="160" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="joIDpppj7RB4MIwdnNrO-23" edge="1" parent="1" style="endArrow=classic;html=1;" value="">
+                    <mxGeometry height="50" relative="1" width="50" as="geometry">
+                        <mxPoint x="315" y="569.5" as="sourcePoint"/>
+                        <mxPoint x="435" y="569.5" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
