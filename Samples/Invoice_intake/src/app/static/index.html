@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Invoice desk</title>
+  <meta name="theme-color" content="#1f5f8b">
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div class="mark" aria-hidden="true">AR</div>
+    <div>
+      <h1>Alpenrad invoice desk</h1>
+      <p>Live demo · Microsoft Foundry + Fabric IQ</p>
+    </div>
+  </header>
+
+  <div class="tabs" role="tablist">
+    <button role="tab" id="tab-scan" aria-selected="true" aria-controls="scan">Scan an invoice</button>
+    <button role="tab" id="tab-ask" aria-selected="false" aria-controls="ask">Ask the data</button>
+  </div>
+
+  <!-- ============ SCAN ============ -->
+  <section id="scan" role="tabpanel" aria-labelledby="tab-scan">
+    <div id="pick">
+      <div class="card">
+        <h2>Photograph a printed invoice</h2>
+        <p class="muted small">Grab one of the sample invoices. The AI reads it, checks it against the purchase order
+          and the contract, and decides whether a person needs to look at it.</p>
+      </div>
+      <label class="btn primary big" for="camera">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg>
+        Take a photo
+      </label>
+      <input id="camera" type="file" accept="image/*" capture="environment" hidden>
+      <div style="height:8px"></div>
+      <label class="btn big" for="filepick">Choose a photo or PDF</label>
+      <input id="filepick" type="file" accept="image/*,application/pdf" hidden>
+    </div>
+
+    <div id="confirm" class="card" hidden>
+      <div class="preview" id="preview"></div>
+      <div class="row" style="margin-top:12px">
+        <button class="btn" id="retake">Retake</button>
+        <button class="btn primary" id="send">Send to AI</button>
+      </div>
+      <div class="error" id="upload-error" hidden></div>
+    </div>
+
+    <div id="progress" class="card" hidden>
+      <h2>Working on it…</h2>
+      <ol class="steps" id="steps">
+        <li data-step="uploaded"><span class="dot"></span>Uploaded</li>
+        <li data-step="reading"><span class="dot"></span>Reading the document (Content Understanding)</li>
+        <li data-step="checking"><span class="dot"></span>Checking PO, goods receipt and contract</li>
+        <li data-step="reviewing"><span class="dot"></span>Second opinion (review agent)</li>
+        <li data-step="done"><span class="dot"></span>Decision</li>
+      </ol>
+    </div>
+
+    <div id="result" hidden></div>
+
+    <p class="fineprint">Please don't scan personal documents. Uploads are deleted two days after the session.</p>
+  </section>
+
+  <!-- ============ ASK ============ -->
+  <section id="ask" role="tabpanel" aria-labelledby="tab-ask" hidden>
+    <div class="card">
+      <h2>Ask the sales data</h2>
+      <p class="muted small">Pick a role. The database's row-level security decides what each role may see,
+        so the same question can get a different answer.</p>
+      <div class="personas" id="personas" role="group" aria-label="Role"></div>
+    </div>
+    <div class="chips" id="chips"></div>
+    <div class="chat" id="chat" aria-live="polite"></div>
+    <form class="composer" id="composer">
+      <input id="question" autocomplete="off" maxlength="400" placeholder="e.g. Which region grew fastest this year?" aria-label="Your question">
+      <button class="btn primary" id="ask-send" type="submit">Ask</button>
+    </form>
+  </section>
+</div>
+<script src="/static/app.js"></script>
+</body>
+</html>

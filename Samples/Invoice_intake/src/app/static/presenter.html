@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Presenter screen</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body class="presenter">
+<div class="wrap">
+  <header class="top" style="justify-content:space-between">
+    <div style="display:flex;gap:12px;align-items:center">
+      <div class="mark" aria-hidden="true">AR</div>
+      <div><h1>Invoice desk · presenter screen</h1><p id="status">Connecting…</p></div>
+    </div>
+    <div class="qr card" style="margin:0">
+      <img src="/api/qr.png" alt="QR code for the audience page">
+      <div><div class="muted small">Scan to join</div><div class="url" id="url"></div></div>
+    </div>
+  </header>
+
+  <div class="stats">
+    <div class="stat"><div class="v" id="s-total">0</div><div class="l">invoices scanned (live)</div></div>
+    <div class="stat ok"><div class="v" id="s-auto">0</div><div class="l">auto-approved</div></div>
+    <div class="stat warn"><div class="v" id="s-review">0</div><div class="l">waiting for a person</div></div>
+    <div class="stat"><div class="v" id="s-other">0</div><div class="l">not an invoice / failed</div></div>
+    <div class="stat"><div class="v" id="s-time">–</div><div class="l">avg. seconds per invoice</div></div>
+  </div>
+
+  <div class="p-grid">
+    <div class="card">
+      <h2>Review queue</h2>
+      <p class="muted small">Stage invoices first. Approved invoices flow to Azure SQL and on to Fabric.</p>
+      <div class="scroll" id="queue"></div>
+    </div>
+    <div class="card">
+      <h2>Live feed</h2>
+      <div class="drop" id="drop">Drop a stage invoice here or click to upload</div>
+      <input type="file" id="stage-file" accept="image/*,application/pdf" hidden>
+      <div class="scroll" id="recent" style="margin-top:10px"></div>
+    </div>
+    <div class="card">
+      <h2>Questions from the audience</h2>
+      <div class="scroll" id="questions"></div>
+    </div>
+  </div>
+</div>
+<script src="/static/presenter.js"></script>
+</body>
+</html>

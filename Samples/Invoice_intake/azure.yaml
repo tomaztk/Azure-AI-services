@@ -1,0 +1,35 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/Azure/azure-dev/main/schemas/v1.0/azure.yaml.json
+name: foundry-invoice-demo
+metadata:
+  template: foundry-invoice-demo@1.0.0
+
+services:
+  web:
+    project: ./src
+    language: python
+    host: appservice
+
+hooks:
+  # Stores your user principal name and a presenter key in the azd environment.
+  preprovision:
+    posix:
+      shell: sh
+      run: python3 scripts/hooks/preprovision.py
+      continueOnError: false
+    windows:
+      shell: pwsh
+      run: python scripts/hooks/preprovision.py
+      continueOnError: false
+  # Creates tables, seeds data, configures Content Understanding, creates the agents,
+  # generates the printable sample invoices and the QR code.
+  postprovision:
+    posix:
+      shell: sh
+      run: python3 -m pip install -q -r scripts/requirements.txt && python3 scripts/postprovision.py
+      interactive: true
+      continueOnError: false
+    windows:
+      shell: pwsh
+      run: python -m pip install -q -r scripts/requirements.txt; python scripts/postprovision.py
+      interactive: true
+      continueOnError: false
