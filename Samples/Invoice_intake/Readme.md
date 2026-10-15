@@ -58,15 +58,22 @@ flowchart LR
 # go to your work location where project files are available
 cd \
 cd ..\..\..
+
+# check your location using
+pwd
+
+# check python version
+python3 --version
 ```
 
 And followed by:
 
 ```bash
 # 1. Python environment (the azd hooks use it)
-python -m venv InvoiceIntake
+python3 -m venv InvoiceIntake
 source InvoiceIntake/bin/activate            # Windows: .venv\Scripts\Activate.ps1
-pip install -r scripts/requirements.txt -r src/requirements.txt
+python3 -m pip install --upgrade pip
+pip install -r Samples/Invoice_intake/src/requirements.txt
 
 # 2. Sign in (both: azd deploys, az is used by the setup scripts)
 az login
