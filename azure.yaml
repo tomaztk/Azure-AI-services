@@ -1,0 +1,35 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/Azure/azure-dev/main/schemas/v1.0/azure.yaml.json
+
+name: azure-ai-services
+metadata:
+    template: azd-init@1.21.3
+services:
+    scripts:
+        project: Samples/Invoice_intake/scripts
+        host: containerapp
+        language: python
+    src:
+        project: Samples/Invoice_intake/src
+        host: containerapp
+        language: python
+    text-to-speech:
+        project: Samples/Text_to_speech
+        host: containerapp
+        language: python
+    validation:
+        project: Samples/Validation
+        host: containerapp
+        language: python
+resources:
+    scripts:
+        type: host.containerapp
+        port: 80
+    src:
+        type: host.containerapp
+        port: 80
+    text-to-speech:
+        type: host.containerapp
+        port: 80
+    validation:
+        type: host.containerapp
+        port: 80
