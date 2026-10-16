@@ -1,0 +1,27 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "environmentName": { "value": "${AZURE_ENV_NAME}" },
+    "location": { "value": "${AZURE_LOCATION}" },
+    "principalId": { "value": "${AZURE_PRINCIPAL_ID}" },
+    "principalName": { "value": "${AZURE_PRINCIPAL_NAME=}" },
+    "principalType": { "value": "${AZURE_PRINCIPAL_TYPE=User}" },
+
+    "chatModelName": { "value": "${CHAT_MODEL_NAME=gpt-5.2}" },
+    "chatModelVersion": { "value": "${CHAT_MODEL_VERSION=2025-12-11}" },
+    "chatModelCapacity": { "value": "${CHAT_MODEL_CAPACITY=100}" },
+    "embeddingModelName": { "value": "${EMBEDDING_MODEL_NAME=text-embedding-3-large}" },
+    "embeddingModelVersion": { "value": "${EMBEDDING_MODEL_VERSION=1}" },
+    "embeddingModelCapacity": { "value": "${EMBEDDING_MODEL_CAPACITY=100}" },
+    "modelSkuName": { "value": "${MODEL_SKU_NAME=GlobalStandard}" },
+
+    "appServiceSku": { "value": "${APP_SERVICE_SKU=B2}" },
+    "presenterKey": { "value": "${PRESENTER_KEY=}" },
+    "autoApproveMaxAmount": { "value": "${AUTO_APPROVE_MAX_AMOUNT=5000}" },
+    "minFieldConfidence": { "value": "${MIN_FIELD_CONFIDENCE=0.50}" },
+
+    "sqlMaxVCores": { "value": "${SQL_MAX_VCORES=2}" },
+    "sqlAutoPauseDelay": { "value": "${SQL_AUTO_PAUSE_DELAY=60}" }
+  }
+}

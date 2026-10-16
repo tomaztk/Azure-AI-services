@@ -1,0 +1,9 @@
+mssql-python>=1.15
+azure-identity>=1.19
+azure-ai-projects>=2.7.0
+openai>=1.99
+azure-storage-blob>=12.23
+httpx>=0.27
+pillow>=10.1
+qrcode>=8.0
+python-dotenv>=1.0

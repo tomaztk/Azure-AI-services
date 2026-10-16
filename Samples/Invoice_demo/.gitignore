@@ -1,0 +1,20 @@
+.venv/
+.env
+.venv
+.vscode/
+.azure/
+__pycache__/
+.pytest_cache/
+samples/*.pdf
+samples/*.jpg
+samples/*.png
+
+
+# Logi in smeti
+*.log
+# Temp files
+*.tmp
+
+#wh + py stuff
+pypackages/
+build/
